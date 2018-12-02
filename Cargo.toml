@@ -1,0 +1,18 @@
+[package]
+name = "mouse"
+version = "0.1.0"
+authors = ["Daniel P. Clark <6ftdan@gmail.com>"]
+
+[dependencies]
+gotham = "0.3.0"
+gotham_derive = "0.3.0"
+
+hyper = "0.12.13"
+mime = "0.3.12"
+lazy_static = "1.2"
+tera = "0.11"
+webpacker = "~0.3"
+
+[build-dependencies]
+webpacker = "~0.3"
+

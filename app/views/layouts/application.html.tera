@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}{% for style in application_styles -%}
+    <link rel="stylesheet" href="{{ style }}" />
+  {% endfor %}{% for source in application_sources -%}
+    <script src="{{ source }}"></script>
+  {% endfor %}
+  <title>{% block title %}{% endblock title %}</title>
+  {% endblock head %}
+</head>
+<body>
+  <header>
+    {% block header %}{% endblock header %}
+  </header>
+  <div id="content">
+    {% block content %}{% endblock content %}
+  </div>
+  <footer>
+    {% block footer %}&copy; Copyright 2018{% endblock footer %}
+  </footer>
+</body>
+</html>
